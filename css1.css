@@ -1,0 +1,92 @@
+
+body{
+    background-color: #93c4fb;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-box{ 
+    border-radius: 3%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.box-right{ 
+    padding-left: 50px;
+    flex: 1;
+    background-color: white;
+}
+.box-left{
+    height: 100%;
+    background-color: #0077ff;
+    flex: 1;
+}
+.small{
+    color: gray;
+}
+form {
+    width: 100%;
+    max-width: 350px;   
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;        
+    font-family:  sans-serif; 
+}
+
+label {
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0077ff;
+    border-radius: 10px;
+    font-size:14px;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #0077ff;
+    box-shadow: 0 0 15px 5px #8fc1fb;
+}
+
+button {
+    margin:20px 5px;
+    flex:1;
+    padding: 10px;
+    background: #0077ff;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover {
+    box-shadow: 0 0 6px 2px #0077ff;
+   
+}
+.box-button{
+     display: flex;
+}
+img{
+    width:300px;
+    position:relative; 
+    top: 200px; 
+    left: 100px;
+}
+.link{ 
+    color: white;
+    text-decoration: none;
+}

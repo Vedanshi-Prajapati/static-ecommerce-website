@@ -1,0 +1,224 @@
+body{
+     margin:0px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background-color: #0077ff;
+    margin:0px;
+    height: 60px;
+    width: 100%;
+    position: sticky;      
+    top: 0;
+    left: 0; 
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    flex:4;
+    font-size: 1.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+}
+.header-elements{
+    padding: 6px 25px;
+    color: white;
+    flex:6;
+    display: flex;
+    flex-direction: row;
+}
+label{
+    padding-right: 15px;
+    font-size: 2em;
+}
+input{
+    margin-right: 100px;
+    width: 20%;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-size:14px;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    width: 30%;
+    font-size:20px;
+    padding: 15px;
+    box-shadow: 0 0 15px 5px #ffffff97,1px 0 15px 5px #d2e9f997;
+}
+.emoji{
+    
+    flex:1;
+    padding-right: 15px;
+    font-size: 1.7em;
+}
+.navi{
+    background-color: #0077ff;
+    margin: 5px 0px;
+    height: auto;
+    border: 2px solid #0077ff;
+    display: flex;
+    flex-direction: row;
+}
+.items1, .items2,.items3,.items4,.items5,.items6,.items7{    
+    border-radius: 10px;
+    margin: 6px;
+    text-align: center;
+    border: 2px solid #0077ff;
+    padding: 8px;    flex:1;
+    background-color: white;
+    color: #0077ff;
+    font-size: 1.2em;
+}
+
+.banner{
+    position: relative;
+    overflow: hidden;
+    margin: 5px 0px;
+    width:100%;
+    height: 350px;
+    background-color: black;
+}
+.touch:hover{
+    margin: 3px 0px;
+    font-size: 1.35em;
+    border-color: #0077ff;
+    box-shadow: 0 0 15px 5px #8fc1fb;
+}
+.b1{
+    margin: 0px;
+    padding: 0px;
+    color: #0077ff;
+    font-size: 2em;
+    text-align: center;
+}
+.b2{
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+.banner:hover{
+    background-color: #0077ff;
+}
+/* .b3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: gold;
+    transition: ease;
+    scale: 1.5;
+}
+.b3:hover{
+    scale:3;
+
+} */
+ .box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #0077ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 6px 20px rgba(0, 0, 0, 0.19);
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 60%;
+    object-fit: contain;
+     transition: transform 0.3s ease;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #0077ff;
+    margin-bottom: 5px;
+}
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+.item-price:hover, .item-name:hover{
+    color: red;
+}
+footer {
+    background: #0077ff;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 8px 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffdd57;
+}
+
+footer .thank {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+@media (max-width: 800px) {
+  .navi {
+    flex-direction: column;
+  }
+}
