@@ -102,18 +102,7 @@ input:focus {
 .banner:hover{
     background-color: #0077ff;
 }
-/* .b3{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: gold;
-    transition: ease;
-    scale: 1.5;
-}
-.b3:hover{
-    scale:3;
 
-} */
  .box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
